@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Produced by Beyond Compare 3 from Scooter Software -->
+<BCFileFormats>
+	<TTextFormat Value="Balsamiq Mockups Project">
+		<CharPerLine Value="4096"/>
+		<CodePageDetect Value="True"/>
+		<ColBased Value="False"/>
+		<CommentCaseSig Value="True"/>
+		<ConvertKind Value="convertApp"/>
+		<ConvertLoadApp Value="Helpers\Bmpr\JsonConverterBmpr.bat %s %t"/>
+		<ConvertNoEdit Value="True"/>
+		<CtrlZIsEOF Value="False"/>
+		<Description>
+			<_0 Value="Compares Balsamiq Mockups Project files (*.bmpr) by converting them to JSON"/>
+		</Description>
+		<DirectiveCaseSig Value="True"/>
+		<EnvironVarCaseSig Value="True"/>
+		<Grammar>
+			<_0 Value="TDelimitedTextGrammarItem">
+				<ElementStr Value="%02String"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="False"/>
+				<Text Value="%22"/>
+				<Escape Value="92"/>
+				<StopEOL Value="True"/>
+				<StopText Value="%22"/>
+			</_0>
+			<_1 Value="TBasicTextGrammarItem">
+				<ElementStr Value="%02Number"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="True"/>
+				<Text Value="\d+(\.\d+)?(e[+-]?\d+)?"/>
+			</_1>
+			<_2 Value="TListTextGrammarItem">
+				<ElementStr Value="%02Operator"/>
+				<CaseSensitive Value="False"/>
+				<IsRegExp Value="False"/>
+				<Items>
+					<_0 Value="{"/>
+					<_1 Value="}"/>
+					<_2 Value="%22"/>
+					<_3 Value="["/>
+					<_4 Value="]"/>
+					<_5 Value=":"/>
+				</Items>
+			</_2>
+		</Grammar>
+		<IdentifierCaseSig Value="True"/>
+		<IndentCaseSig Value="True"/>
+		<KeywordCaseSig Value="True"/>
+		<LabelCaseSig Value="True"/>
+		<LineBased Value="False"/>
+		<LineNumCaseSig Value="True"/>
+		<Mask Value="*.bmpr"/>
+		<NumberCaseSig Value="True"/>
+		<OperatorCaseSig Value="True"/>
+		<StringCaseSig Value="True"/>
+		<TabAsSpaces Value="False"/>
+		<TabSize Value="8"/>
+		<TidyLeadingWS Value="False"/>
+		<TrimTrailingWS Value="False"/>
+	</TTextFormat>
+</BCFileFormats>
