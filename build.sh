@@ -6,7 +6,7 @@ set -e
 
 GITHUB_ORG=https://github.com/waqasilyas
 REPO_NAME=json-converter-bmpr
-VERSION=0.1
+VERSION=0.2
 
 DOWNLOAD_URL=$GITHUB_ORG/$REPO_NAME/releases/download/v$VERSION/$REPO_NAME-$VERSION.zip
 
@@ -25,7 +25,7 @@ echo Downloading $DOWNLOAD_URL
 wget -T30 -Ooutput/$REPO_NAME.zip $DOWNLOAD_URL 
 
 # Unpack converter and prepare output
-cd output
+cd $OUTPUT_DIR
 7z x -tzip -o$PLUGIN_DIR $REPO_NAME.zip
 mv $PLUGIN_DIR/$REPO_NAME-$VERSION $PLUGIN_DIR/$REPO_NAME
 
