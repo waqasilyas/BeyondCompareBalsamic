@@ -1,4 +1,5 @@
->> Helpers\Bmpr\JsonConverterBmpr.log 2>&1 (
+mkdir "%APPDATA%\Beyond Compare 3"
+>> "%APPDATA%\Beyond Compare 3\JsonConverterBmpr.log" 2>&1 (
   echo ============================================
   echo Source: %1
   echo Target: %2
